@@ -2,6 +2,7 @@ package data;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.assertj.core.api.Assertions;
 
@@ -30,6 +31,7 @@ class RecipeFileHandlerTest {
         new File(TEST_FILE_PATH).delete();
     }
 
+    @Tag("Q1")
     @Test
     void readRecipes_ShouldReturnListOfRecipes() {
         List<String> recipes = fileHandler.readRecipes();
@@ -37,6 +39,7 @@ class RecipeFileHandlerTest {
         Assertions.assertThat(recipes.get(0)).contains("Tomato Soup");
     }
 
+    @Tag("Q2")
     @Test
     void addRecipe_ShouldAddRecipeToFile() {
         fileHandler.addRecipe("Pancakes", "Flour, Milk, Egg, Butter, Maple Syrup");

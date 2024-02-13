@@ -2,6 +2,7 @@ package ui;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
@@ -35,6 +36,7 @@ class RecipeUITest {
         System.setOut(originalOut); // 標準出力を元に戻す
     }
 
+    @Tag("Q1")
     @Test
     void displayMenu_ShouldHandleDisplayRecipes() {
         String input = "1\n4\n"; // 1: Display Recipes, then 4: Exit
@@ -47,6 +49,7 @@ class RecipeUITest {
         verify(fileHandlerMock, times(1)).readRecipes();
     }
 
+    @Tag("Q2")
     @Test
     void displayMenu_ShouldHandleAddNewRecipe() {
         String input = "2\nTest Recipe\nTest Ingredients\n4\n"; // 2: Add New Recipe, then 4: Exit
@@ -59,6 +62,7 @@ class RecipeUITest {
         verify(fileHandlerMock, times(1)).addRecipe("Test Recipe", "Test Ingredients");
     }
 
+    @Tag("Q3")
     @Test
     void displayMenu_ShouldHandleSearchRecipe() {
         String input = "3\nTest Query\n4\n"; // 3: Search Recipe, then 4: Exit

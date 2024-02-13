@@ -34,6 +34,43 @@ tasks.named('test') {
     }
 }
 
+task q1test(type: Test) {
+    useJUnitPlatform {
+        includeTags 'Q1'
+    }
+
+    testLogging {
+        showStandardStreams = true
+        exceptionFormat 'full'
+        events 'started', 'skipped', 'passed', 'failed'
+    }
+}
+
+task q2test(type: Test) {
+    useJUnitPlatform {
+        includeTags 'Q2'
+    }
+
+    testLogging {
+        showStandardStreams = true
+        exceptionFormat 'full'
+        events 'started', 'skipped', 'passed', 'failed'
+    }
+}
+
+task q3test(type: Test)  {
+    useJUnitPlatform {
+        includeTags 'Q3'
+    }
+
+    testLogging {
+        showStandardStreams = true
+        exceptionFormat 'full'
+        events 'started', 'skipped', 'passed', 'failed'
+    }
+}
+
+
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }

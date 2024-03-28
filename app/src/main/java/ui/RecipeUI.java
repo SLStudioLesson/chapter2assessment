@@ -57,5 +57,20 @@ public class RecipeUI {
         }
     }
 
+    // 設問1: 一覧表示機能
+    private void displayRecipes() {
+
+    }
+
+    // 設問2: 新規登録機能
+    private void addNewRecipe() throws IOException {
+
+    }
+
+    // 設問3: 検索機能
+    private void searchRecipe() throws IOException {
+
+    }
+
 }
 

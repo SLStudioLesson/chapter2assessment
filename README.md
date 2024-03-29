@@ -129,7 +129,7 @@ Main Ingredients: Beef, Potatoes, Carrots, Onion, Beef Stock
 
 - `recipes.txt`ファイルが空の場合、"No recipes available."というメッセージが表示されることを確認します。
 
-**(※`IOException`が送信される場合の動作は確認する必要はありません。)**
+**(※`IOException`が発生した場合の動作は確認する必要はありません。)**
 
 
 

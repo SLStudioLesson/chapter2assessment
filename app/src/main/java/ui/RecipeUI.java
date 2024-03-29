@@ -75,7 +75,12 @@ public class RecipeUI {
 
     }
 
-    // 設問3: 検索機能
+    /**
+     * 設問3: 検索機能
+     * ユーザーから検索クエリを入力させ、そのクエリに基づいてレシピを検索し、一致するレシピをコンソールに表示します。
+     *
+     * @throws java.io.IOException 入出力が受け付けられない
+     */
     private void searchRecipe() throws IOException {
 
     }

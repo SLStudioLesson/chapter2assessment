@@ -190,7 +190,7 @@ Recipe added successfully.
 - 登録した内容が`recipes.txt`ファイルに正しく追加されていること
 
 
-#### (※`IOException`が送信される場合の動作は確認する必要はありません。)
+**(※`IOException`が送信される場合の動作は確認する必要はありません。)**
 
 
 ## 設問3: 検索機能

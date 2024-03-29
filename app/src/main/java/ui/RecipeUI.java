@@ -57,7 +57,10 @@ public class RecipeUI {
         }
     }
 
-    // 設問1: 一覧表示機能
+    /**
+     * 設問1: 一覧表示機能
+     * RecipeFileHandlerから読み込んだレシピデータを整形してコンソールに表示します。
+     */
     private void displayRecipes() {
 
     }

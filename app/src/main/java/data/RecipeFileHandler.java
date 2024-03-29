@@ -30,7 +30,15 @@ public class RecipeFileHandler {
         return null;
     }
 
-    // 設問2: 新規登録機能
+    /**
+     * 設問2: 新規登録機能
+     * 新しいレシピをrecipes.txtに追加します。<br>
+     * レシピ名と材料はカンマ区切りで1行としてファイルに書き込まれます。
+     *
+     * @param recipeName レシピ名
+     * @param ingredients 材料名
+     */
+     // 
     public void addRecipe(String recipeName, String ingredients) {
         try {
 

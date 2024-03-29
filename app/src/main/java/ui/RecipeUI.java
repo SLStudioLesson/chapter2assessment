@@ -62,7 +62,12 @@ public class RecipeUI {
 
     }
 
-    // 設問2: 新規登録機能
+    /**
+     * 設問2: 新規登録機能
+     * ユーザーからレシピ名と主な材料を入力させ、RecipeFileHandlerを使用してrecipes.txtに新しいレシピを追加します。
+     *
+     * @throws java.io.IOException 入出力が受け付けられない
+     */
     private void addNewRecipe() throws IOException {
 
     }

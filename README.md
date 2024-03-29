@@ -271,4 +271,4 @@ No recipes found matching the criteria.
 
 - 検索クエリ`name=Pizza`を入力し、`No recipes found matching the criteria.`というメッセージが表示されることを確認します。
 
-#### (※`IOException`が送信される場合の動作は確認する必要はありません。)
+**(※`IOException`が送信される場合の動作は確認する必要はありません。)**

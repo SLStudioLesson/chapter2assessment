@@ -153,7 +153,7 @@ Main Ingredients: Beef, Potatoes, Carrots, Onion, Beef Stock
 
 | メソッド名  | 戻り値の型 | 引数                                    | 説明                                                         |
 | ----------- | ---------- | --------------------------------------- | ------------------------------------------------------------ |
-| `addRecipe` | `void`     | `String recipeName, String ingredients` | 新しいレシピを`recipes.txt`に追加します。 - レシピ名と材料はカンマ区切りで1行としてファイルに書き込まれます。 <br> IOExceptionが発生したときは`Error reading file: 例外のメッセージ`とコンソールに表示します。 |
+| `addRecipe` | `void`     | `String recipeName, String ingredients` | 新しいレシピを`recipes.txt`に追加します。 <br> レシピ名と材料はカンマ区切りで1行としてファイルに書き込まれます。 <br> IOExceptionが発生したときは`Error reading file: 例外のメッセージ`とコンソールに表示します。 |
 
 
 `src/main/java/ui/RecipeUI.java` 

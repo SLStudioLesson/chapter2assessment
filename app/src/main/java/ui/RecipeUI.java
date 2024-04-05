@@ -57,5 +57,33 @@ public class RecipeUI {
         }
     }
 
+    /**
+     * 設問1: 一覧表示機能
+     * RecipeFileHandlerから読み込んだレシピデータを整形してコンソールに表示します。
+     */
+    private void displayRecipes() {
+
+    }
+
+    /**
+     * 設問2: 新規登録機能
+     * ユーザーからレシピ名と主な材料を入力させ、RecipeFileHandlerを使用してrecipes.txtに新しいレシピを追加します。
+     *
+     * @throws java.io.IOException 入出力が受け付けられない
+     */
+    private void addNewRecipe() throws IOException {
+
+    }
+
+    /**
+     * 設問3: 検索機能
+     * ユーザーから検索クエリを入力させ、そのクエリに基づいてレシピを検索し、一致するレシピをコンソールに表示します。
+     *
+     * @throws java.io.IOException 入出力が受け付けられない
+     */
+    private void searchRecipe() throws IOException {
+
+    }
+
 }
 

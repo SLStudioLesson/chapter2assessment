@@ -84,7 +84,7 @@
 
 | メソッド名       | 戻り値の型 | 引数 | 送信される例外 | 説明                                                         |
 | ---------------- | ---------- | ---- | -------------- | ------------------------------------------------------------ |
-| `displayRecipes` | `void`     | なし | なし | `RecipeFileHandler`から読み込んだレシピデータを整形してコンソールに表示します。 |
+| `displayRecipes` | `void`     | なし | なし | `RecipeFileHandler`から読み込んだレシピデータを整形してコンソールに表示します。<br> 読み込んだレシピデータが空の場合は、 `No recipes available.` というメッセージを出力します。 |
 
 - 表示形式は以下の出力例を再現すること
 
@@ -127,7 +127,7 @@ Main Ingredients: Beef, Potatoes, Carrots, Onion, Beef Stock
 
 #### テストケース2
 
-- `recipes.txt`ファイルが空の場合、"No recipes available."というメッセージが表示されることを確認します。
+- `recipes.txt`ファイルが空の場合、 `No recipes available.` というメッセージが表示されることを確認します。
 
 **(※`IOException`が発生した場合の動作は確認する必要はありません。)**
 

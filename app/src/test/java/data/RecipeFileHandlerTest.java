@@ -1,14 +1,14 @@
 package data;
 
+import java.io.File;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.assertj.core.api.Assertions;
-
-import java.io.File;
-import java.io.PrintWriter;
-import java.util.List;
 
 class RecipeFileHandlerTest {
     private static final String TEST_FILE_PATH = "src/test/resources/test_recipes.txt";
@@ -34,7 +34,7 @@ class RecipeFileHandlerTest {
     @Tag("Q1")
     @Test
     void readRecipes_ShouldReturnListOfRecipes() {
-        List<String> recipes = fileHandler.readRecipes();
+        ArrayList<String> recipes = fileHandler.readRecipes();
         Assertions.assertThat(recipes).isNotNull().hasSize(1);
         Assertions.assertThat(recipes.get(0)).contains("Tomato Soup");
     }
@@ -43,7 +43,7 @@ class RecipeFileHandlerTest {
     @Test
     void addRecipe_ShouldAddRecipeToFile() {
         fileHandler.addRecipe("Pancakes", "Flour, Milk, Egg, Butter, Maple Syrup");
-        List<String> recipes = fileHandler.readRecipes();
+        ArrayList<String> recipes = fileHandler.readRecipes();
         Assertions.assertThat(recipes).hasSize(2);
         Assertions.assertThat(recipes.get(1)).contains("Pancakes");
     }

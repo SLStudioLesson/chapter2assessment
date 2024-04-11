@@ -22,11 +22,11 @@ public class RecipeFileHandler {
      * @return レシピデータ
      */
     public ArrayList<String> readRecipes() {
-        try {
-
-        } catch (IOException e) {
-            System.out.println("Error reading file:" + e.getMessage());
-        }
+        // try {
+    
+        // } catch (IOException e) {
+        //     System.out.println("Error reading file:" + e.getMessage());
+        // }
         return null;
     }
 
@@ -40,10 +40,10 @@ public class RecipeFileHandler {
      */
      // 
     public void addRecipe(String recipeName, String ingredients) {
-        try {
+        // try {
 
-        } catch (IOException e) {
+        // } catch (IOException e) {
 
-        }
+        // }
     }
 }

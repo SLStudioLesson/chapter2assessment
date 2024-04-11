@@ -1,6 +1,7 @@
 package data;
 
-import java.util.List;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class RecipeFileHandler {
     private String filePath;
@@ -20,7 +21,7 @@ public class RecipeFileHandler {
      *
      * @return レシピデータ
      */
-    public List<String> readRecipes() {
+    public ArrayList<String> readRecipes() {
         // try {
 
         // } catch (IOException e) {

@@ -1,7 +1,7 @@
 package data;
 
 import java.io.IOException;
-import java.util.List;
+import java.util.ArrayList;
 
 public class RecipeFileHandler {
     private String filePath;
@@ -21,12 +21,12 @@ public class RecipeFileHandler {
      *
      * @return レシピデータ
      */
-    public List<String> readRecipes() {
-        try {
+    public ArrayList<String> readRecipes() {
+        // try {
 
-        } catch (IOException e) {
-            System.out.println("Error reading file:" + e.getMessage());
-        }
+        // } catch (IOException e) {
+        //     System.out.println("Error reading file:" + e.getMessage());
+        // }
         return null;
     }
 
@@ -40,10 +40,10 @@ public class RecipeFileHandler {
      */
      // 
     public void addRecipe(String recipeName, String ingredients) {
-        try {
+        // try {
 
-        } catch (IOException e) {
+        // } catch (IOException e) {
 
-        }
+        // }
     }
 }

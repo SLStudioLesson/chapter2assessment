@@ -23,7 +23,7 @@ public class RecipeFileHandler {
      */
     public ArrayList<String> readRecipes() {
         // try {
-    
+
         // } catch (IOException e) {
         //     System.out.println("Error reading file:" + e.getMessage());
         // }
